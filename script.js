@@ -1,3 +1,6 @@
+let novaDiv = document.createElement('div');
+let novaUL = document.createElement('ul');
+
 let botao = document.querySelector(".principal__botao");
 
 botao.addEventListener("click", (event) => {
@@ -8,12 +11,15 @@ botao.addEventListener("click", (event) => {
 
     let tagIMG = `<img src="${linkDigitado}" class="principal__imagem">`;
 
-    let novaTagP = document.createElement("p");
+    let novaTagLi = document.createElement("li");
 
-    novaTagP.innerHTML= tagIMG;
+    novaTagLi.innerHTML= tagIMG;
 
-    let divisao = document.querySelector(".principal");
+    let divPrincipal = document.querySelector(".principal");
 
-    divisao.appendChild(novaTagP);
+    divPrincipal.appendChild(novaDiv);
+    novaDiv.appendChild(novaUL);
+    novaUL.classList.add("principal__lista")
+    novaUL.appendChild(novaTagLi);
 
 })

@@ -60,5 +60,11 @@ body {
 }
 
 .principal__imagem {
-    width: 200px;
+    width: 180px;
+    margin-right: .5rem;
+}
+
+.principal__lista {
+    display: flex;
+    flex-wrap: wrap;
 }
