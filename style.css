@@ -53,4 +53,12 @@ body {
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
+    font-family: var(--fonte);
+    color: var(--brancoFonte);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.principal__imagem {
+    width: 200px;
 }
