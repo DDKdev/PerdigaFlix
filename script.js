@@ -12,6 +12,7 @@ botao.addEventListener("click", (event) => {
     let tagIMG = `<img src="${linkDigitado}" class="principal__imagem">`;
 
     let novaTagLi = document.createElement("li");
+    novaTagLi.classList.add("lista__item");
 
     novaTagLi.innerHTML= tagIMG;
 
@@ -21,5 +22,14 @@ botao.addEventListener("click", (event) => {
     novaDiv.appendChild(novaUL);
     novaUL.classList.add("principal__lista")
     novaUL.appendChild(novaTagLi);
+
+    let botaoRemover = document.createElement("button");
+    botaoRemover.textContent = "Remover";
+    novaTagLi.appendChild(botaoRemover);
+
+    botaoRemover.addEventListener("click", (event) => {
+        event.target.parentNode.remove();
+
+    })
 
 })
