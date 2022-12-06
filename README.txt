@@ -2,9 +2,11 @@
 PERDIGAFLIX - projeto com intuito de fixar aprendizado em HTML, CSS e Javascript.
 
 **********************************************************
-Próximso passos.
+Próximos passos.
 
-- Adicionar botão de remover
+- Refatorar
+- Adicionar botão de remover - melhorar o botão.
 - Adicionar funções de assistido, não assistido.
 - Armazenar os dados preenchidos.
+- link para a página do filme.
 
